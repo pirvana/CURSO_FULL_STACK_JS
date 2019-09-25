@@ -1,0 +1,31 @@
+npm i express
+----------------------------
+npm init -y --> para crear nuestro package.json donde se guardaran nuestras dependecnias
+aqui se genera el package.json en donde podemos configurar una ruta de inicio del servidor:
+en scripts: "dev": "nodemon [el lugar donde esta el index.js ejemplo] backend/index.js"
+luego ejecutarlo con "npm run dev" listo.
+
+-------------------------------
+INSTALAMOS:
+express ->  Frameworks de JS
+mongoose --> BD Mongo DB --> es solo un modulo de conexion
+morgan --> nos da una salida de los codigos http --> modulo
+multer --> permite subir imagenes al servidor --> modulo
+dotenv --> modulo que permite trabajar con variables de entorno, definimos cadenas de datos o codigos que no queremos que se variables
+cross-env --> modulo permite ver en que entorno de produccion estamos
+cors -> modulo permite a dos servidores enviar y recibir datos de manera sencilla
+
+se crean archivos de index.js y database.js, luego carpetas de routes y models
+
+fs-extra--> modulo para mantener el codigo limpio y lo mas moderno posible
+nodemon -D --> modulo para no estar reinciando el servidor a cada rato -D -> es para que no se instalen los modulos de dependencia en todo el proyecto
+---------------------------------
+clase Nº 8:
+npm i webpack webpack-cli html-webpack-plugin css-loader style-loader mini-css-extract-plugin webpack-dev-server timeago.js -D nodemon -D dotenv cross-env express morgan multer mongoose fs cors
+
+se instalan todas estas dependencias
+
+secrea la carpeta models service en el front
+
+
+
