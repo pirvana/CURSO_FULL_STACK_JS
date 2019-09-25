@@ -12,7 +12,7 @@ class BookService {
         return books;
     }
 
-    async postBooks(book) {
+    async postBook(book) {
         const res = await fetch(this.URI, {
             method: 'POST',
             body: book

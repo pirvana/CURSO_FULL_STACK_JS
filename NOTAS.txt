@@ -21,7 +21,7 @@ fs-extra--> modulo para mantener el codigo limpio y lo mas moderno posible
 nodemon -D --> modulo para no estar reinciando el servidor a cada rato -D -> es para que no se instalen los modulos de dependencia en todo el proyecto
 ---------------------------------
 clase Nº 8:
-npm i webpack webpack-cli html-webpack-plugin css-loader style-loader mini-css-extract-plugin webpack-dev-server timeago.js -D nodemon -D dotenv cross-env express morgan multer mongoose fs cors
+npm i webpack webpack-cli html-webpack-plugin css-loader style-loader mini-css-extract-plugin webpack-dev-server timeago.js -D nodemon -D dotenv cross-env express morgan multer mongoose fs cors timeago
 
 se instalan todas estas dependencias
 
