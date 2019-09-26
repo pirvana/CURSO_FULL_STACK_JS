@@ -3,7 +3,7 @@ import { model } from "mongoose";
 
 class BookService {
     constructor(){
-        this.URI = 'http://localhost:4000/api/books';
+        this.URI = '/api/books';
     }
 
     async getBooks() {
@@ -22,7 +22,7 @@ class BookService {
     }
 
     async deleteBook(bookId) {
-        const res = await fetch(`${this.URI}/${bookId}`, {
+        const res = await fetch(`${this.URI}/${"/"+bookId}`, {
             headers:{
                 'Content-type': 'application/json'
             },
@@ -30,6 +30,7 @@ class BookService {
         });
         const data = await res.json();
         console.log(data)
+        console.log('ESTO APARECE AL QUERER ELIMINAR' +bookId )
     }
 }
 

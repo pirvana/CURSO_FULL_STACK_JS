@@ -19,7 +19,7 @@ app.set('port', process.env.PORT || 3000);
 //middleware --> todos los middleware de express son funciones
 app.use(morgan('dev'));
 const storage = multer.diskStorage({
-    destination: path.join(__dirname, 'public/upload'),
+    destination: path.join(__dirname, 'public/upload/'),
     filename(req, file, cb){
         cb(null, new Date().getTime() + path.extname(file.originalname));
     }

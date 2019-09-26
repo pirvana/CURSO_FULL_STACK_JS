@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     const book = await Book.findByIdAndDelete(req.params.id);
-    unlink(path.resolve('./backend/public/upload/' + book.imagePath))
+    unlink(path.resolve('./backend/public/' + book.imagePath))
     res.json({message:'Book deleted'});
 });
 
